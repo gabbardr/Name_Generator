@@ -1,7 +1,14 @@
 ---
 layout: layout.liquid
 title: 11ty Boilerplate
+description: Function learned through Professor Jeff Siarto 6.5 Videos and Math function was learned through W3School
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div class="container">
+    <div x-data="{list: ['Randi', 'Nick', 'Sean', 'Billy', 'Connor', 'Logan', 'Taylor', 'Zac', 'Austin', 'Camden'], GeneratedName: '' }">
+        <button @click="GeneratedName=list[Math.floor(Math.random() * 10)]">Click Here to Generate a Name!</button>
+        <div class="container2">
+            <h1 x-text="GeneratedName"></h1>
+        </div>
+    </div>
+</div>
